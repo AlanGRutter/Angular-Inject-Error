@@ -1,0 +1,25 @@
+:host {
+    display: block;
+    background-color: rgba(195, 64, 247, 0.6);
+    box-shadow: inset 0 0 0 4px green;
+}
+
+div.page-container {
+    container: page / inline-size;
+    display: grid;
+    grid-template-columns: 40px [header-start main-start footer-start] auto [header-end main-end footer-end] 40px;
+    grid-template-rows: 20px [header-start] minmax(10px, max-content) [header-end main-start] auto [main-end footer-start] minmax(10px, max-content) [footer-end];
+    height: 100cqh;
+
+    yes-header {
+        grid-area: header;
+    }
+
+    yes-footer {
+        grid-area: footer;
+    }
+
+    div.page-content {
+        grid-area: main;
+    }
+}

@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 35cqw;
+
+  .section-heading {
+    margin-block-start: 10cqh;
+    box-shadow: 0 3px 0 rgb(var(--color-sf-on-surface));
+    width: fit-content;
+  }
+
+  ul {
+    padding-left: 2em;
+  }
+}
+
+.student-image {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-image: url("/assets/images/student.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  aspect-ratio: 4 / 3;
+  width: 65cqw;
+  z-index: 999;
+}
